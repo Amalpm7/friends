@@ -17,7 +17,7 @@ export class FriendsComponent implements OnInit {
     )
   }
   friendData:any=[]
-
+ 
   ngOnInit(): void {
   }
 

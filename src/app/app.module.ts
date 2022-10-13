@@ -7,22 +7,29 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FriendsComponent } from './friends/friends.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
+import { AddfriendsComponent } from './addfriends/addfriends.component';
+import { FormsModule } from "@angular/forms";
 const appRoutes:Routes=[
   {
     path:"",component:FriendsComponent
+  },
+  {
+    path:"add",component:AddfriendsComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FriendsComponent
+    FriendsComponent,
+    AddfriendsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
